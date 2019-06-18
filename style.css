@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: #051073;
+    text-align: center;
+    line-height: 1.5;
+    background:rgb(248, 244, 237);
+  }
+  
+  footer {
+    padding: 1% 0;
+    margin: 2% 0 0 0;
+    background-color: #EDCFC9;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .reveal{
+    display:block;
+  }
+  .fa-bars{
+    float: left;
+    margin: 2%;
+    color: #051073;
+  }
+  ul{
+    display:none;
+    list-style: none;
+    padding: 0px;
+    float:left;
+    margin-left: 80px;
+  }
+  li{
+    background: rgb(248, 244, 237);
+    padding: 20px 40px;
+  
+  }
+  li:hover{
+    background: #051073;
+    color:#FFADA7;
+  }
+  .initials{
+    position: fixed;
+    top: 10;
+    left: 0;
+    margin: 10px;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px #051073 solid;
+    cursor: pointer;
+  }
+  header {
+    padding: 12% 0;
+    background:  url("https://i.ibb.co/ftjbB6Y/tardis-2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -10px;
+    font-size: 30px;
+    color:#030c55
+  }
+  
+  section {
+    padding: 0;
+    margin: 0px;
+  }
+  .area1of1{
+    background-color: #EDCFC9;
+    margin: 0;
+  }
+  h2{
+    padding:2% 15%;
+  }
+  .area1of1-content>h4{
+    padding: 2% 7%;
+    margin: 0;
+  }
+  .area1of1-content>h3{
+    padding: 2% 7%;
+    margin: 0;
+  }
+  .area1of1-content>p{
+    padding: 2% 7%;
+    margin: 0;
+  }
+  .area2of1{
+    margin: 0 0 3% 0;
+    background-color: #F4ECDE;
+  }
+  .area2of1-content{
+    padding: 3%;
+  }
+  .area3of1{
+    display: none;
+  }
+  .roundButton{
+    border: 2px solid black;
+    background: rgba(255, 255, 255, 0.678);
+    border-radius: 50%;
+    font-size: 14px;
+    width: 50px;
+    height:50px;
+    display: inline-block;
+    padding: 0px;
+    cursor: pointer;
+  }
+  .quiz-button{
+    display: block;
+    background:#F4ECDE;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 5px;
+    width: 115px;
+    border-radius: 25px;
+    margin: 2% auto;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #051073;
+    text-align: center;
+    line-height: 1.5;
+    transition: 0.3s ease-in-out;
+  }
+  .quiz-button:hover{
+    background:#EDCFC9;
+    letter-spacing: 1px;
+  }
+  .area1of2{
+    background-color:  #EDCFC9;
+    padding: 1% 7%;
+  }
+  .area2of2{
+    display:none;
+  }
+  .area3of2{
+    background:url("https://i.ibb.co/3cFrbJb/brooklyn99cover.png");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .area3of2-content{
+    display:none;
+  }
+  a{
+    text-decoration: none;
+    color: inherit
+  }
+  .etsy-logo{
+    width:70px;
+    margin-bottom: 6px;
+    cursor: pointer;
+  }
+  .pinterest-logo{
+    width: 90px;
+    margin-bottom: -4px;
+    cursor: pointer;
+  }
+  .instagram-logo{
+    width: 75px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (min-width:850px){
+    .initials{
+      display:none;
+    }
+    nav{
+      background: #FFCCB0;
+      opacity: 0.5;
+      padding: 15px 0px;
+      text-align: center;
+    }
+    ul{
+      display: inline;
+      padding-left: 0px;
+      float: none;
+    }
+    li{
+      display: inline;
+      padding: 16px 20px;
+      background: #FFCCB0;
+    }
+    li:hover{
+      background: #051073;
+      color:#FFADA7 !important;
+    }
+    .layout1{
+      width: 100%;
+      overflow:hidden;
+      display: flex;
+      margin: 2% 0 0 0;
+      min-height: 400px;
+    }
+    .aboutMe{
+      background-image: url("https://i.ibb.co/jbjN6by/movemountains-2-LI.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0;
+      background-attachment: fixed;
+    }
+    .area1of1-content>h2{
+      font-size: 24px;
+      padding:1% 0% !important;
+    }
+    .area1of1-content>h4{
+      padding: 1% 23% 1% 0% !important;
+    }
+    .area1of1{
+      background:#EDCFC9;
+      width:150%;
+      z-index: 2;
+      transform: skew(-29deg);
+      margin-left:-24%;
+      border-right: 4px double black;
+      border-right-style: double;
+    }
+    .area1of1-content{
+      text-align: left;
+      transform: skew(29deg);
+      margin-left:30%;
+    }
+    .area2of1{
+      background: rgba(237, 207, 201, 0.712);
+      width: 220%;
+      margin-left: -80%;
+      z-index: 0;
+      min-height: 200px;
+      margin-top: 30%;
+      transform: skew(60deg);
+      border-right: 2px solid black;
+      margin-bottom: 0%;
+    }
+    .area2of1-content{
+      margin-top: 30%;
+      margin-right: -40%;
+      transform:skew(-60deg);
+    }
+    .roundButton{
+      height:75px;
+      width:75px;
+    }
+    .area3of1{
+      display:flex;
+      width:200%;
+      z-index: 1;
+      transform: skew(60deg);
+      margin-right: -30%;
+      opacity: 0;
+    }
+    .area3of1-content{
+      margin:0;
+      padding: 0;
+    }
+    
+  .layout2{
+      width: 100%;
+      overflow:hidden;
+      display: flex;
+      flex-direction: row;
+      margin: 2% 0;
+      flex-wrap: nowrap;
+      min-height: 400px;
+    }
+    .b99quiz{
+      background-image: url("https://i.ibb.co/rymh5kK/Capture.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0;
+      background-attachment: fixed;
+    }
+    .area1of2{
+      background:#05107394;
+      width:65%;
+      margin-left: -45%;
+      z-index: 0;
+      transform: skew(-30deg);
+      display: flex;
+      border-right: black solid 3px;
+    }
+    .area1of2-content{
+      transform:skew(30deg);
+      margin-left: 100%;
+      margin-top: 37%;
+    }
+    .area1of2-content>.project-description{
+      display:none;
+    }
+  
+    .area2of2{
+      background: rgb(248, 244, 237);
+      height:100%;
+      width: 150%;
+      margin-bottom: 0%;
+      margin-top: 0%;
+      padding-top: 30%;
+      margin-right: -80%;
+      margin-left: 40%;
+      z-index: 1;
+      transform: skew(60deg);
+      border-left:black double 4px;
+      display: flex;
+    }
+    .area2of2-content{
+      margin: -23% 38% 30% 20%;
+      transform: skew(-60deg);
+      text-align: right;
+    }
+    .project-description>h2{
+      margin-left: -15% !important;
+      margin-right: -10% !important;
+    }
+    .area3of2{
+      background:#EDCFC9;
+      width:75%;
+      z-index: 2;
+      transform: skewY(25deg);
+      margin-right: -30%;
+      margin-left: -10%;
+      display: none;
+    }
+    .contact{
+      background-image: url("https://i.ibb.co/FqMxjpF/thoughshebelittle-3.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0;
+      background-attachment: fixed;
+    }
+    .contact>.area1of1{
+      margin-left: -27% !important;
+      padding-right: 6%;
+    }
+  }
