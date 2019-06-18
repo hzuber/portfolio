@@ -189,6 +189,7 @@
       display: inline;
       padding-left: 0px;
       float: none;
+      margin-left: -20px;
     }
     li{
       display: inline;
