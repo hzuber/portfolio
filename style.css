@@ -146,8 +146,13 @@
   .area2of2{
     display:none;
   }
-  .area3of2{
+  .b99quiz>.area3of2{
     background:url("https://i.ibb.co/3cFrbJb/brooklyn99cover.png");
+  }
+  .animalWatch>.area3of2{
+    background-image: url("https://i.ibb.co/rcYGLQ5/Captureanimal-watch.png");
+  }
+  .area3of2{
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -279,6 +284,13 @@
     }
     .b99quiz{
       background-image: url("https://i.ibb.co/rymh5kK/Capture.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0;
+      background-attachment: fixed;
+    }
+    .animalWatch{
+      background-image: url("https://i.ibb.co/rcYGLQ5/Captureanimal-watch.png");
       background-repeat: no-repeat;
       background-size: cover;
       padding: 0;
