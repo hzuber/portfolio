@@ -1,4 +1,4 @@
-//hide navbar if person scrolls down
+//hide navbar if person scrolls up
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
