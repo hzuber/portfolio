@@ -1,133 +1,201 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nanum+Gothic|Open+Sans+Condensed:300|Raleway&display=swap" rel="stylesheet">
-    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <nav role="navigation" id="navbar">
-      <img onclick="myFunction()" class="initials" src="https://i.ibb.co/hFBXfyX/initials-colored2.png" alt="initials-colored2" border="0">
-      <ul id="myDropdown" class="dropdown-content">
-        <a href="#about"><li>About Me</li></a>
-        <a href="#projects"><li>Projects</li></a>
-        <a href="#contact"><li>Contact</li></a>
-      </ul>
-    </nav>
-    <main role="main">
-      <header role="banner">
-          <h1>Hannah Zuber</h1>
-      </header>
 
-      <section class="layout1 aboutMe" id="about">
-        <section class="area1of1">
-          <div class="area1of1-content">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nanum+Gothic|Open+Sans+Condensed:300|Raleway&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <nav role="navigation" id="navbar">
+    <img onclick="myFunction()" class="initials" src="https://i.ibb.co/hFBXfyX/initials-colored2.png"
+      alt="initials-colored2" border="0">
+    <ul id="myDropdown" class="dropdown-content">
+      <li>
+        <a href="#about">
+          About Me
+        </a>
+      </li>
+      <li>
+        <a href="#projects">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main role="main">
+    <header role="banner">
+      <h1>Hannah Zuber</h1>
+    </header>
+
+    <section class="layout1 aboutMe" id="about">
+      <section class="area1of1">
+        <div class="area1of1-content">
           <h2>Hey there, I’m Hannah: I’m a developer with a love for all things beautiful. </h2>
-          <h4> I am a junior full-stack developer who recently graduated the Thinkful full stack bootcamp.  I began coding because I enjoy problem solving and creating beautiful websites that are also intuitive. When I’m not coding, I’m hopefully drawing, dancing, singing or relaxing on the beach.</h4>
-          </div>
-        </section>
-        
-        <section class="area2of1">
-          <div class="area2of1-content">
-            <a target="_blank" href="https://github.com/hzuber"><img class="roundButton" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="githublogo" ></a>
-            <a target="_blank" href="https://www.linkedin.com/in/hannahzuber-developer/"><img class="roundButton" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG27.png" alt="linkedIn logo"></a>
+          <h4> I am a junior full-stack developer who recently graduated the Thinkful full stack bootcamp. I began
+            coding because I enjoy problem solving and creating beautiful websites that are also intuitive. When I’m not
+            coding, I’m hopefully drawing, dancing, singing or relaxing on the beach.</h4>
+        </div>
+      </section>
+
+      <section class="area2of1">
+        <div class="area2of1-content">
+          <a target="_blank" href="https://github.com/hzuber">
+            <img class="roundButton"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"
+              alt="githublogo">
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/hannahzuber-developer/">
+            <img class="roundButton"
+              src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG27.png" 
+              alt="linkedIn logo">
+          </a>
+        </div>
+      </section>
+
+      <section class="area3of1">
+      </section>
+    </section>
+
+    <section id="projects">
+      <section class="layout2 b99quiz">
+        <section class="area1of2">
+          <div class="area1of2-content">
+            <div class="project-description">
+              <h2>Project: Brooklyn Nine Nine Quiz</h2>
+              <p>This quiz was my first webapp, developed for Thinkful. It’s a single page quiz that tests your
+                knowledge of the comedy gold that is Brooklyn Nine Nine. It uses simple and clean JQuery functions to
+                create each quiz page, keep the score and current question numbers displayed in the header and give
+                random feedback on the answers submitted by the user.</p>
+            </div>
+            <button class="quiz-button">
+              <a target="_blank" href="https://hzuber.github.io/brooklyn99quiz/">
+                <div class= "quiz-button logo">
+                  Take the Quiz
+                </div>
+              </a>
+            </button>
+            <a target="_blank" href="https://github.com/hzuber/brooklyn99quiz">
+              <img class="roundButton"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"
+                alt="githublogo">
+            </a>
           </div>
         </section>
 
-        <section class="area3of1">
+        <section class="area2of2">
+          <div class="area2of2-content">
+            <div class="project-description">
+              <h2>Project: Brooklyn Nine Nine Quiz</h2>
+              <p>This quiz was my first webapp, developed for Thinkful. It’s a single page quiz that tests your
+                knowledge of the comedy gold that is Brooklyn Nine Nine. It uses simple and clean JQuery functions to
+                create each quiz page, keep the score and current question numbers displayed in the header and give
+                random feedback on the answers submitted by the user.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="area3of2">
+          <div class="area3of2-content">
+          </div>
         </section>
       </section>
 
-    <section id="projects"> 
-      <section class="layout2 b99quiz">
-          <section class="area1of2">
-            <div class="area1of2-content">
-              <div class="project-description">
-                <h2>Project: Brooklyn Nine Nine Quiz</h2>
-                <p>This quiz was my first webapp, developed for Thinkful. It’s a single page quiz that tests your knowledge of the comedy gold that is Brooklyn Nine Nine. It uses simple and clean JQuery functions to create each quiz page, keep the score and current question numbers displayed in the header and give random feedback on the answers submitted by the user.</p>
-              </div>
-              <button class="quiz-button">
-                <a target="_blank" href="https://hzuber.github.io/brooklyn99quiz/><div class="quiz-button logo">Take the Quiz</button></a>
-                <a target="_blank" href="https://github.com/hzuber/brooklyn99quiz"><img class="roundButton" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="githublogo" ></a>
-              </div>
+      <section class="layout3 animalWatch">
+        <section class="area1of3">
+          <div class="area1of3-content">
+            <div class="project-description">
+              <h2>Project: Animal Watch!</h2>
+              <p>This app was my API capstone, developed for Thinkful. In this app, children can find animals in a
+                variety of ways, and then watch kid-friendly educational videos about that animal. It uses HTML, CSS,
+                JQuery and the YouTube API.</p>
             </div>
-          </section>
-
-          <section class="area2of2">
-            <div class="area2of2-content">
-              <div class="project-description">
-                <h2>Project: Brooklyn Nine Nine Quiz</h2>
-                <p>This quiz was my first webapp, developed for Thinkful. It’s a single page quiz that tests your knowledge of the comedy gold that is Brooklyn Nine Nine. It uses simple and clean JQuery functions to create each quiz page, keep the score and current question numbers displayed in the header and give random feedback on the answers submitted by the user.</p>
-              </div>
-            </div>
-          </section>
-
-          <section class="area3of2">
-            <div class="area3of2-content">
-            </div>
-          </section>
+            <button class="quiz-button">
+              <a target="_blank" href="https://hzuber.github.io/learnaboutanimals/">
+                <div class="quiz-button logo">View The App
+              </a>
+            </button>
+            <a target="_blank" href="https://github.com/hzuber/learnaboutanimals">
+              <img class="roundButton"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"
+                alt="githublogo">
+            </a>
+          </div>
         </section>
 
-          <section class="layout2 animalWatch">
-            <section class="area1of2">
-              <div class="area1of2-content">
-                <div class="project-description">
-                  <h2>Project: Animal Watch!</h2>
-                  <p>This app was my API capstone, developed for Thinkful. In this app, children can find animals in a variety of ways, and then watch kid-friendly educational videos about that animal. It uses HTML, CSS, JQuery and the YouTube API.</p>
-                </div>
-                <button class="quiz-button">
-                  <a target="_blank" href="https://hzuber.github.io/learnaboutanimals/"><div class="quiz-button logo">View The App</a>
-                </button>
-                  <a target="_blank" href="https://github.com/hzuber/learnaboutanimals"><img class="roundButton" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="githublogo" ></a>
-                </div>
-              </div>
-            </section>
-  
-            <section class="area2of2">
-              <div class="area2of2-content">
-                <div class="project-description">
-                  <h2>Project: Animal Watch!</h2>
-                  <p>This app was my API capstone, developed for Thinkful. In this app, children can find animals in a variety of ways, and then watch kid-friendly educational videos about that animal. It uses HTML, CSS, JQuery and the YouTube API.</p>
-                </div>
-              </div>
-            </section>
-
-          <section class="area3of2">
-            <div class="area3of2-content">
+        <section class="area2of3">
+          <div class="area2of3-content">
+            <div class="project-description">
+              <h2>Project: Animal Watch!</h2>
+              <p>This app was my API capstone, developed for Thinkful. In the Animal Watch app, children can find animals in a
+                variety of ways, and then watch kid-friendly educational videos about that animal. It uses HTML, CSS,
+                JQuery and the YouTube and Encyclopedia of Life APIs.</p>
             </div>
-          </section>
+            <button class="quiz-button">
+              <a target="_blank" href="https://hzuber.github.io/learnaboutanimals/">
+                <div class="quiz-button logo">View The App
+              </a>
+            </button>
+            <a target="_blank" href="https://github.com/hzuber/learnaboutanimals">
+              <img class="roundButton"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"
+                alt="githublogo">
+            </a>
+          </div>
+        </section>
+
+        <section class="area3of3">
+          <div class="area3of3-content">
+          </div>
         </section>
       </section>
     </section>
-    
-      <section class="layout1 contact" id="contact">
-        <section class="area1of1">
-          <div class="area1of1-content">
-            <h3>Get In Touch</h3>
-            <p> Email: <a href="mailto:hgomberg@gmail.com?Subject=Hello" target="_top">hgomberg@gmail.com</a></p>
-            <p>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/hannahzuber-developer/">linkedin.com/in/hannahZuber-developer</a></p>
-          </div> 
-        </section>
+    </section>
 
-        <section class="area2of1">
-          <div class="area2of1-content">
-            <a target="_blank" href="https://www.etsy.com/il-en/shop/GeekNChicArt?ref=search_shop_redirect"><img class="etsy-logo logo" src="https://bushelandpecks.com/wp-content/uploads/2017/03/etsy-logo.png" alt="Etsy logo" ></a>
-            <a target="_blank" href="https://www.pinterest.com/hzuber/"><img class="pinterest-logo logo" src="https://1kkihmvglky39oxo03l2hnz9-wpengine.netdna-ssl.com/wp-content/uploads/2013/04/pinterest_badge_red-712x712.png" alt="pinterest logo"></a>
-            <a target="_blank" href="https://www.instagram.com/hannahzuber/"><img class="instagram-logo logo" src="https://i1.wp.com/nappstarrocks.com/wp-content/uploads/2017/09/Instagram-circle-icon-1.png?fit=300%2C300&ssl=1" alt="instagram logo" ></a>
-          </div>
-        </section>
-
-        <section class="area3of1">
-        </section>
+    <section class="layout1 contact" id="contact">
+      <section class="area1of1">
+        <div class="area1of1-content">
+          <h3>Get In Touch</h3>
+          <p> Email: <a href="mailto:hgomberg@gmail.com?Subject=Hello" target="_top">hgomberg@gmail.com</a></p>
+          <p>LinkedIn: <a target="_blank"
+              href="https://www.linkedin.com/in/hannahzuber-developer/">linkedin.com/in/hannahZuber-developer</a></p>
+        </div>
       </section>
 
+      <section class="area2of1">
+        <div class="area2of1-content">
+          <a target="_blank" href="https://www.etsy.com/il-en/shop/GeekNChicArt?ref=search_shop_redirect"><img
+              class="etsy-logo logo" src="https://bushelandpecks.com/wp-content/uploads/2017/03/etsy-logo.png"
+              alt="Etsy logo"></a>
+          <a target="_blank" href="https://www.pinterest.com/hzuber/"><img class="pinterest-logo logo"
+              src="https://1kkihmvglky39oxo03l2hnz9-wpengine.netdna-ssl.com/wp-content/uploads/2013/04/pinterest_badge_red-712x712.png"
+              alt="pinterest logo"></a>
+          <a target="_blank" href="https://www.instagram.com/hannahzuber/"><img class="instagram-logo logo"
+              src="https://i1.wp.com/nappstarrocks.com/wp-content/uploads/2017/09/Instagram-circle-icon-1.png?fit=300%2C300&ssl=1"
+              alt="instagram logo"></a>
+        </div>
       </section>
-    </main>
-    <footer role="content-info">2019</footer>
-  </body>
+
+      <section class="area3of1">
+      </section>
+    </section>
+
+    </section>
+  </main>
+  <footer role="content-info">2019</footer>
+</body>
+
 </html>

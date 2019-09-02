@@ -161,6 +161,25 @@
   .area3of2-content{
     display:none;
   }
+  .area1of3{
+    background-color:  #EDCFC9;
+    padding: 1% 7%;
+  }
+  .area2of3{
+    display:none;
+  }
+  .animalWatch>.area3of3{
+    background-image: url("https://i.ibb.co/rcYGLQ5/Captureanimal-watch.png");
+  }
+  .area3of3{
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .area3of3-content{
+    display:none;
+  }
   a{
     text-decoration: none;
     color: inherit
@@ -210,7 +229,7 @@
       overflow:hidden;
       display: flex;
       margin: 2% 0 0 0;
-      min-height: 400px;
+      min-height: 300px;
     }
     .aboutMe{
       background-image: url("https://i.ibb.co/jbjN6by/movemountains-2-LI.jpg");
@@ -289,13 +308,6 @@
       padding: 0;
       background-attachment: fixed;
     }
-    .animalWatch{
-      background-image: url("https://i.ibb.co/rcYGLQ5/Captureanimal-watch.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding: 0;
-      background-attachment: fixed;
-    }
     .area1of2{
       background:#05107394;
       width:65%;
@@ -338,6 +350,76 @@
       margin-right: -10% !important;
     }
     .area3of2{
+      background:#EDCFC9;
+      width:75%;
+      z-index: 2;
+      transform: skewY(25deg);
+      margin-right: -30%;
+      margin-left: -10%;
+      display: none;
+    }  
+    .layout3{
+      width: 100%;
+      overflow:hidden;
+      display: flex;
+      flex-direction: row;
+      margin: 2% 0;
+      flex-wrap: nowrap;
+      min-height: 400px;
+    } 
+    .animalWatch{
+      background-image: url("https://i.ibb.co/rcYGLQ5/Captureanimal-watch.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0;
+      background-attachment: fixed;
+    }
+    .area1of3{
+      background: rgb(248, 244, 237);
+      width:165%;
+      margin-left: -65%;
+      z-index: 1;
+      transform: skew(60deg);
+      display: flex;
+      border-right: black solid 3px;
+    }
+    .area1of3-content{
+      transform:skew(-60deg);
+      margin-left: 38%;
+      margin-right: 20%;
+      margin-top: 28%;
+    }
+    .area1of3-content>button{
+      display: none;
+    }
+    .area1of3-content>a{
+      display: none;
+    }
+    .area2of3-content>.project-description{
+      display:none;
+    }
+  
+    .area2of3{
+      background:#05107394;
+      height:100%;
+      width: 150%;
+      margin-bottom: 0%;
+      margin-top: 0%;
+      padding-top: 25%;
+      padding-bottom: 10%;
+      margin-right: -65%;
+      margin-left: 30%;
+      z-index: 0;
+      transform: skew(-30deg);
+      border-left:black double 4px;
+      display: flex;
+    }
+    .area2of3-content{
+      margin: -5% 5% 30% 5%;
+      transform: skew(30deg);
+      text-align: center;
+    }
+    .area3of3{
       background:#EDCFC9;
       width:75%;
       z-index: 2;
