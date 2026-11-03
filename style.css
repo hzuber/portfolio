@@ -124,6 +124,23 @@ svg {
 .socials a { color: var(--pink); transition: transform 0.2s; }
 .socials a:hover { transform: translateY(-2px); }
 .socials svg { width: 22px; height: 22px; }
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.2s, transform 0.2s;
+}
+.cv-btn:hover { background: var(--pink); transform: translateY(-2px); }
+.cv-btn svg { width: 18px; height: 18px; }
 
 /* Typography */
 .display {
@@ -242,6 +259,8 @@ a.row:hover .arrow { transform: translate(3px, -3px); }
 /* Art gallery */
 .art-lead { margin: -12px 0 32px; }
 .gallery { columns: 2; column-gap: 16px; }
+.ig-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 8px; }
+.ig-link svg { color: var(--pink); }
 .art {
   position: relative;
   display: block;
