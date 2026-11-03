@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 150" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- outer walls -->
+  <rect x="12" y="12" width="196" height="126" stroke-width="3.5" />
+  <!-- interior walls with door gaps -->
+  <path d="M90 12v38M90 70v68" stroke-width="3" />
+  <path d="M90 78h46M156 78h52" stroke-width="3" />
+  <path d="M150 12v36M150 62v16" stroke-width="3" />
+  <!-- door swings -->
+  <path d="M90 50a20 20 0 0 1 20 20" stroke-dasharray="3 3" />
+  <path d="M136 78a20 20 0 0 0 20 -20" stroke-dasharray="3 3" />
+  <path d="M150 48a14 14 0 0 1 14 14" stroke-dasharray="3 3" />
+  <!-- big meeting room: table + chairs -->
+  <rect x="30" y="52" width="42" height="46" rx="6" />
+  <g>
+    <circle cx="24" cy="64" r="4" /><circle cx="24" cy="86" r="4" />
+    <circle cx="78" cy="64" r="4" /><circle cx="78" cy="86" r="4" />
+    <circle cx="51" cy="46" r="4" /><circle cx="51" cy="104" r="4" />
+  </g>
+  <!-- small room: round table -->
+  <circle cx="120" cy="40" r="12" />
+  <circle cx="120" cy="22" r="3.5" /><circle cx="120" cy="58" r="3.5" />
+  <circle cx="102" cy="40" r="3.5" /><circle cx="138" cy="40" r="3.5" />
+  <!-- phone booth -->
+  <rect x="164" y="24" width="30" height="20" rx="3" />
+  <circle cx="179" cy="54" r="3.5" />
+  <!-- open area desks -->
+  <rect x="104" y="96" width="34" height="16" rx="2" />
+  <rect x="152" y="96" width="34" height="16" rx="2" />
+  <circle cx="121" cy="122" r="3.5" /><circle cx="169" cy="122" r="3.5" />
+  <!-- room status dots -->
+  <circle cx="80" cy="24" r="4" fill="#1a1a1a" />
+  <circle cx="140" cy="24" r="4" />
+</svg>

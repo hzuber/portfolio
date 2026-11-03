@@ -1,216 +1,255 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta prefix="og: http://ogp.me/ns#" property = 'og:title' content="Hannah Zuber's Portfolio"/>
-  <meta prefix="og: http://ogp.me/ns#" property = 'og:image' content='./pic.png'/>
-  <meta prefix="og: http://ogp.me/ns#" property = 'og:description' content='Full-stack Developer | UX enthusiast | Lover of all things beautiful'/>
-  <meta prefix="og: http://ogp.me/ns#" property='og:url' content='https://hzuber.github.io/portfolio/'/>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Hannah Zuber's Portfolio</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nanum+Gothic|Open+Sans+Condensed:300|Raleway&display=swap"
-    rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hannah Gomberg - Front-End / Full-Stack Developer</title>
+  <meta name="description" content="Hannah Gomberg - Front-End and Full-Stack Developer with 8+ years building responsive, accessible web apps and marketing sites with React, TypeScript, Node.js and WordPress." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <nav role="navigation" id="navbar">
-    <img onclick="myFunction()" class="initials" src="https://i.ibb.co/hFBXfyX/initials-colored2.png"
-      alt="initials-colored2" border="0">
-    <ul id="myDropdown" class="dropdown-content">
-      <li>
-        <a href="#about">
-          About Me
-        </a>
-      </li>
-      <li>
-        <a href="#projects">
-          Projects
-        </a>
-      </li>
-      <li>
-        <a href="#contact">
-          Contact
-        </a>
-      </li>
-    </ul>
+  <nav class="nav" aria-label="Main">
+    <a href="#top" title="Home" aria-label="Home">
+      <svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>
+    </a>
+    <a href="#projects" title="Projects" aria-label="Projects">
+      <svg viewBox="0 0 24 24"><path d="M3 7h18v13H3zM8 7V4h8v3"/></svg>
+    </a>
+    <a href="#experience" title="Experience" aria-label="Experience">
+      <svg viewBox="0 0 24 24"><path d="M12 8v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+    </a>
+    <a href="#skills" title="Skills" aria-label="Skills">
+      <svg viewBox="0 0 24 24"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg>
+    </a>
+    <a href="#art" title="Art" aria-label="Art">
+      <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18c1 0 1.5-.7 1.5-1.5 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.8.7-1.5 1.5-1.5H16a5 5 0 0 0 5-5c0-4.4-4-7.8-9-7.8zM7.5 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm3-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm5 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+    </a>
+    <a href="#contact" title="Contact" aria-label="Contact">
+      <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7"/></svg>
+    </a>
   </nav>
-  <main role="main">
-    <header role="banner">
-      <h1>Hannah Zuber</h1>
-    </header>
 
-    <section class="layout1 aboutMe" id="about">
-      <section class="area1of1">
-        <div class="area1of1-content">
-          <h2>Hey there, I’m Hannah: I’m a developer with a love for all things beautiful. </h2>
-          <h4> I am a junior full-stack developer who recently graduated the Thinkful full stack bootcamp. I began
-            coding because I enjoy problem solving and creating beautiful websites that are also intuitive. When I’m not
-            coding, I’m hopefully drawing, dancing, singing or relaxing on the beach.</h4>
+  <div class="layout" id="top">
+    <!-- Profile card (sticky on desktop) -->
+    <aside class="profile">
+      <div class="profile-card">
+        <div class="avatar-container">
+          <div class="avatar">
+            <img src="img/hannah.jpg" alt="Hannah Gomberg" />
+          </div>
         </div>
-      </section>
-
-      <section class="area2of1">
-        <div class="area2of1-content">
-          <a target="_blank" href="https://github.com/hzuber">
-            <img class="roundButton"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"
-              alt="githublogo">
+        <h2 class="profile-name">Hannah Gomberg</h2>
+        <p class="profile-bio">Nurse turned developer. Pixel-perfect, people-first.</p>
+        <p class="profile-loc">Based in Israel</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/hzuber-dev" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>
           </a>
-          <a target="_blank" href="www.linkedin.com/in/hzuber-dev">
-            <img class="roundButton"
-              src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG27.png" 
-              alt="linkedIn logo">
+          <a href="https://github.com/hzuber" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+          </a>
+          <a href="mailto:hgomberg@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7"/></svg>
           </a>
         </div>
-      </section>
+      </div>
+    </aside>
 
-      <section class="area3of1">
-      </section>
-    </section>
+    <main class="content">
+      <!-- Hero -->
+      <section class="hero">
+        <h1 class="display">Front-End<br /><span class="muted">Developer</span></h1>
+        <p class="lead">Passionate about turning Figma designs into fast, accessible, pixel-perfect interfaces - and making the people who use them (marketers, lawyers, patients, customers) a little happier.</p>
 
-    <section id="projects">
-      <section class="layout2 b99quiz">
-        <section class="area1of2">
-          <div class="area1of2-content">
-            <div class="project-description">
-              <h2>Project: Brooklyn Nine Nine Quiz</h2>
-              <p>This quiz was my first webapp, developed for Thinkful. It’s a single page quiz that tests your
-                knowledge of the comedy gold that is Brooklyn Nine Nine. It uses simple and clean JQuery functions to
-                create each quiz page, keep the score and current question numbers displayed in the header and give
-                random feedback on the answers submitted by the user.</p>
-            </div>
-            <button class="quiz-button">
-              <a target="_blank" href="https://hzuber.github.io/brooklyn99quiz/">
-                <div class= "quiz-button logo">
-                  Take the Quiz
-                </div>
-              </a>
-            </button>
-            <a target="_blank" href="https://github.com/hzuber/brooklyn99quiz">
-              <img class="roundButton"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"
-                alt="githublogo">
-            </a>
+        <div class="highlight-cards">
+          <div class="hcard hcard-pink">
+            <svg viewBox="0 0 24 24"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg>
+            <p>Clean code is a love letter to the next developer.</p>
           </div>
-        </section>
-
-        <section class="area2of2">
-          <div class="area2of2-content">
-            <div class="project-description">
-              <h2>Project: Brooklyn Nine Nine Quiz</h2>
-              <p>This quiz was my first webapp, developed for Thinkful. It’s a single page quiz that tests your
-                knowledge of the comedy gold that is Brooklyn Nine Nine. It uses simple and clean JQuery functions to
-                create each quiz page, keep the score and current question numbers displayed in the header and give
-                random feedback on the answers submitted by the user.</p>
-            </div>
+          <div class="hcard hcard-yellow">
+            <svg viewBox="0 0 24 24"><path d="M18.4 2.6a2 2 0 0 1 2.9 2.9L11 15.8 8.2 13zM7 14.5c-2 0-3.5 1.6-3.5 3.5 0 1.2-.7 2.2-1.5 2.5 1 .9 2.4 1.5 4 1.5 2.5 0 4.5-2 4.5-4.5z"/></svg>
+            <p>Every blank wall, page and screen is a canvas.</p>
           </div>
-        </section>
-
-        <section class="area3of2">
-          <div class="area3of2-content">
-          </div>
-        </section>
-      </section>
-
-      <section class="layout3 animalWatch">
-        <section class="area1of3">
-          <div class="area1of3-content">
-            <div class="project-description">
-              <h2>Project: Animal Watch!</h2>
-              <p>This app was my API capstone, developed for Thinkful. In this app, children can find animals in a
-                variety of ways, and then watch kid-friendly educational videos about that animal. It uses HTML, CSS,
-                JQuery and the YouTube API.</p>
-            </div>
-            <button class="quiz-button">
-              <a target="_blank" href="https://hzuber.github.io/learnaboutanimals/">
-                <div class="quiz-button logo">View The App
-              </a>
-            </button>
-            <a target="_blank" href="https://github.com/hzuber/learnaboutanimals">
-              <img class="roundButton"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"
-                alt="githublogo">
-            </a>
-          </div>
-        </section>
-
-        <section class="area2of3">
-          <div class="area2of3-content">
-            <div class="project-description">
-              <h2>Project: Animal Watch!</h2>
-              <p>This app was my API capstone, developed for Thinkful. In the Animal Watch app, children can find animals in a
-                variety of ways, and then watch kid-friendly educational videos about that animal. It uses HTML, CSS,
-                JQuery and the YouTube and Encyclopedia of Life APIs.</p>
-            </div>
-            <button class="quiz-button">
-              <a target="_blank" href="https://hzuber.github.io/learnaboutanimals/">
-                <div class="quiz-button logo">View The App
-              </a>
-            </button>
-            <a target="_blank" href="https://github.com/hzuber/learnaboutanimals">
-              <img class="roundButton"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"
-                alt="githublogo">
-            </a>
-          </div>
-        </section>
-
-        <section class="area3of3">
-          <div class="area3of3-content">
-          </div>
-        </section>
-      </section>
-    </section>
-
-    <section class="layout1 contact" id="contact">
-      <section class="area1of1">
-        <div class="area1of1-content">
-          <h3>Get In Touch</h3>
-          <p> Email: 
-            <a href="mailto:hgomberg@gmail.com?Subject=Hello" target="_top">
-              hgomberg@gmail.com
-            </a>
-          </p>
-          <p>LinkedIn: 
-            <a target="_blank"
-              href="www.linkedin.com/in/hzuber-dev">
-                linkedin.com/in/hzuber-dev
-            </a>
-          </p>
-          <p>GitHub: 
-            <a target="_blank" href="https://github.com/hzuber">
-              github.com/hzuber
-            </a>
-          </p>
         </div>
       </section>
 
-      <section class="area2of1">
-        <div class="area2of1-content">
-          <a target="_blank" href="https://www.etsy.com/il-en/shop/GeekNChicArt?ref=search_shop_redirect"><img
-              class="etsy-logo logo" src="https://bushelandpecks.com/wp-content/uploads/2017/03/etsy-logo.png"
-              alt="Etsy logo"></a>
-          <a target="_blank" href="https://www.pinterest.com/hzuber/"><img class="pinterest-logo logo"
-              src="https://1kkihmvglky39oxo03l2hnz9-wpengine.netdna-ssl.com/wp-content/uploads/2013/04/pinterest_badge_red-712x712.png"
-              alt="pinterest logo"></a>
-          <a target="_blank" href="https://www.instagram.com/hannahzuber/"><img class="instagram-logo logo"
-              src="https://i1.wp.com/nappstarrocks.com/wp-content/uploads/2017/09/Instagram-circle-icon-1.png?fit=300%2C300&ssl=1"
-              alt="instagram logo"></a>
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <h2 class="display-sm">Recent<br /><span class="muted">Projects</span></h2>
+        <div class="list">
+          <a class="row" href="https://www.atera.com" target="_blank" rel="noopener">
+            <div class="thumb"><img src="img/projects/atera.jpg" alt="Atera site stats: 92% of tickets resolved by Robin, $20M net present value" loading="lazy" /></div>
+            <div class="row-body">
+              <h3>Atera Marketing Website</h3>
+              <p>WordPress + custom Gutenberg blocks, multilingual (WPML), Auth0 signup flows, and a planned headless React migration.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">&#8599;</span>
+          </a>
+          <div class="row">
+            <div class="thumb"><img src="img/projects/chamelio.jpg" alt="Chamelio app screen showing request templates and a New task button" loading="lazy" /></div>
+            <div class="row-body">
+              <h3>Chamelio Legal-Tech App &amp; Word Add-in</h3>
+              <p>Built reusable UI components and a shared design system across a web app and a Microsoft Word add-in for legal workflows.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="thumb thumb-left"><img src="img/projects/vayyar.jpg" alt="Vayyar website industry banner: Safeguarding seniors" loading="lazy" /></div>
+            <div class="row-body">
+              <h3>Vayyar E-commerce Site</h3>
+              <p>React + Gatsby storefront with lazy loading and a REST API so sales could schedule discounts and change prices without a redeploy.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="thumb thumb-art" style="--c1:#9fe3ff;--c2:#e3f7ff"><img src="img/projects/floorplan.svg" alt="Line drawing of an office floor plan with meeting rooms" loading="lazy" /></div>
+            <div class="row-body">
+              <h3>Meeting-Room Status App</h3>
+              <p>Remix + Tailwind app powered by Microsoft Graph API and Azure security showing live office room availability.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="thumb thumb-art" style="--c1:#ffd95c;--c2:#fff3c4"><img src="img/projects/car.svg" alt="Line drawing of a car in a parking spot" loading="lazy" /></div>
+            <div class="row-body">
+              <h3>Parking Coordination App</h3>
+              <p>Full-stack Blazor, C#, ASP.NET and MySQL app with Azure AD authentication for coordinating office parking.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="area3of1">
+      <!-- Where it started -->
+      <section id="origin" class="section">
+        <h2 class="display-sm">Where it<br /><span class="muted">Started</span></h2>
+        <a class="origin-card" href="https://hzuber.github.io/brooklyn99quiz/" target="_blank" rel="noopener">
+          <div class="origin-img">
+            <img src="img/projects/b99-quiz.png" alt="Brooklyn Nine-Nine quiz screen reading 'You're real smurt' with a Captain Holt GIF and a Next Question button" loading="lazy" />
+          </div>
+          <div class="origin-body">
+            <span class="tag">2019 &middot; Bootcamp</span>
+            <h3>Brooklyn Nine-Nine Quiz</h3>
+            <p>My very first React app: a trivia quiz about my favorite (at the time) sitcom, complete with Captain Holt reaction GIFs. It's where I fell in love with building things people actually enjoy clicking.</p>
+            <span class="btn btn-primary">Play the quiz &#8599;</span>
+          </div>
+        </a>
       </section>
-    </section>
 
-  </main>
-  <footer role="content-info">2019</footer>
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <h2 class="display-sm">8+ Years of<br /><span class="muted">Experience</span></h2>
+        <div class="list">
+          <div class="job">
+            <div class="job-head"><h3>Atera</h3><span class="date">Feb 2026 - Present</span></div>
+            <p class="role">Web Developer, Marketing</p>
+            <p>Built and maintained the marketing site on WordPress, from debugging signup flows across environments to managing multilingual content. Consistently used Claude Code + Figma MCP to speed up design-to-code.</p>
+          </div>
+          <div class="job">
+            <div class="job-head"><h3>Chamelio AI</h3><span class="date">Dec 2024 - Jan 2026</span></div>
+            <p class="role">Front-End Developer</p>
+            <p>Created scalable UI components for a legal-tech web app and Word add-in, a cross-platform design system, and state management for complex legal workflows.</p>
+          </div>
+          <div class="job">
+            <div class="job-head"><h3>Vayyar Imaging</h3><span class="date">Jan 2020 - Oct 2024</span></div>
+            <p class="role">Full-Stack Developer</p>
+            <p>Led the React/Gatsby e-commerce site, built pricing REST APIs, interactive savings tools for marketing, and internal apps with Remix, Blazor and Azure.</p>
+          </div>
+          <div class="job">
+            <div class="job-head"><h3>Reflective</h3><span class="date">Oct 2023 - Nov 2024</span></div>
+            <p class="role">Front-End Developer (Contract)</p>
+            <p>Optimized language switching and translations in a React site, extended the MySQL schema for templates and preferences, built reusable hooks.</p>
+          </div>
+          <div class="job">
+            <div class="job-head"><h3>Freelance</h3><span class="date">Sep 2018 - Jan 2020</span></div>
+            <p class="role">WordPress Developer</p>
+            <p>Designed and built WordPress sites for individuals, small businesses and non-profits.</p>
+          </div>
+          <div class="job">
+            <div class="job-head"><h3>Health Care Centers</h3><span class="date">Oct 2013 - Jun 2019</span></div>
+            <p class="role">Registered Nurse (BSc Nursing)</p>
+            <p>Coordinated between doctors, patients and labs, and explained care in clear, accessible language - an empathy I bring to every interface.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <h2 class="display-sm">Tools &amp;<br /><span class="muted">Skills</span></h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Front-End</h3>
+            <ul class="chips"><li>React</li><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3 / SCSS</li><li>Tailwind</li><li>Chakra UI</li><li>Remix</li><li>Gatsby</li><li>Accessibility</li><li>Design Systems</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Back-End</h3>
+            <ul class="chips"><li>Node.js</li><li>Express</li><li>REST</li><li>GraphQL</li><li>MySQL</li><li>PHP</li><li>C# / ASP.NET</li><li>Auth0</li><li>Azure AD</li><li>JWT</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>CMS &amp; Headless</h3>
+            <ul class="chips"><li>WordPress</li><li>Gutenberg blocks</li><li>WPML</li><li>Headless architecture</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; DevOps</h3>
+            <ul class="chips"><li>Git / GitHub</li><li>Docker</li><li>DDEV</li><li>AWS</li><li>Cloudflare</li><li>nginx</li><li>CircleCI</li><li>Playwright</li><li>Figma</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>AI &amp; Automation</h3>
+            <ul class="chips"><li>Claude Code</li><li>MCP</li><li>Figma MCP</li><li>Prompt engineering</li><li>Agent skills &amp; plugins</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Art -->
+      <section id="art" class="section">
+        <h2 class="display-sm">Off the<br /><span class="muted">Screen</span></h2>
+        <p class="lead art-lead">When I'm not coding, I'm drawing, hand-lettering and painting murals. Same eye for detail, different canvas.</p>
+        <div class="gallery">
+          <button class="art" data-full="img/art/mural-shapes.jpg"><img src="img/art/mural-shapes.jpg" alt="Large colorful abstract mural of organic shapes in a parking garage" loading="lazy" /><span>Abstract mural</span></button>
+          <button class="art" data-full="img/art/lettering-fierce.jpg"><img src="img/art/lettering-fierce.jpg" alt="Hand-lettered Shakespeare quote 'though she be but little she is fierce' with watercolor flowers" loading="lazy" /><span>Hand lettering</span></button>
+          <button class="art" data-full="img/art/mural-clouds.jpg"><img src="img/art/mural-clouds.jpg" alt="Pink cloud mural painted across an office wall" loading="lazy" /><span>Cloud mural</span></button>
+          <button class="art" data-full="img/art/guitar-blueprint.jpg"><img src="img/art/guitar-blueprint.jpg" alt="White-ink guitar blueprint illustration on black paper with funny labels" loading="lazy" /><span>Guitar blueprint</span></button>
+          <button class="art" data-full="img/art/botanical-watercolor.jpg"><img src="img/art/botanical-watercolor.jpg" alt="Ink botanical illustration with coral watercolor poppies" loading="lazy" /><span>Ink &amp; watercolor</span></button>
+          <button class="art" data-full="img/art/mural-plants.jpg"><img src="img/art/mural-plants.jpg" alt="Black line-art mural of potted plants on a shelf" loading="lazy" /><span>Line-art mural</span></button>
+          <button class="art" data-full="img/art/lettering-mountains.jpg"><img src="img/art/lettering-mountains.jpg" alt="Hand-lettered quote 'let her sleep, for when she wakes she will move mountains' over watercolor hills" loading="lazy" /><span>Lettering &amp; watercolor</span></button>
+        </div>
+      </section>
+
+      <dialog class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img alt="" />
+      </dialog>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <h2 class="display-sm">Let's Work<br /><span class="muted">Together</span></h2>
+        <p class="lead">Open to front-end and full-stack roles, especially in healthcare and marketing tech. The fastest way to reach me is email.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:hgomberg@gmail.com">hgomberg@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/hzuber-dev" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+        </div>
+      </section>
+
+      <footer class="footer">&copy; <span id="year">2026</span> Hannah Gomberg</footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    document.querySelectorAll('.art').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        lightboxImg.src = btn.dataset.full;
+        lightboxImg.alt = btn.querySelector('img').alt;
+        lightbox.showModal();
+      });
+    });
+    // Close on the X button or a click on the backdrop
+    lightbox.addEventListener('click', (e) => {
+      if (e.target !== lightboxImg) lightbox.close();
+    });
+  </script>
 </body>
-
 </html>

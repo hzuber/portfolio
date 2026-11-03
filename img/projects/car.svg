@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 150" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- parking lines -->
+  <path d="M14 128h192" stroke-width="2" />
+  <path d="M20 128v-10M200 128v-10" stroke-width="2" stroke-dasharray="3 4" />
+  <!-- body -->
+  <path d="M28 104v-14c0-6 4-10 10-11l26-5 22-22c4-4 9-6 15-6h40c6 0 11 2 15 6l20 22 18 3c7 1 12 7 12 14v13c0 3-2 5-5 5h-10" />
+  <path d="M60 109h68" />
+  <path d="M28 104c0 3 2 5 5 5h3" />
+  <!-- windows -->
+  <path d="M76 74l18-18c3-3 6-4 10-4h16v22z" />
+  <path d="M128 52h10c4 0 7 1 10 4l16 18h-36z" />
+  <!-- door + handle -->
+  <path d="M124 74v34" />
+  <path d="M134 84h8M106 84h8" />
+  <!-- lights -->
+  <path d="M178 86h12" />
+  <path d="M30 88h8" />
+  <!-- wheels -->
+  <circle cx="48" cy="108" r="14" /><circle cx="48" cy="108" r="5" />
+  <circle cx="150" cy="108" r="14" /><circle cx="150" cy="108" r="5" />
+  <!-- P sign -->
+  <rect x="180" y="18" width="26" height="26" rx="5" />
+  <path d="M189 37V25h5a4 4 0 0 1 0 8h-5" />
+</svg>
